@@ -1,9 +1,10 @@
 import telebot
 import buttons
 import database
+import config
 
 # Создаем объект бота
-bot = telebot.TeleBot('7618854447:AAFpLI9mzXQFnsREmgIRboKNvp90DfB_HfM')
+bot = telebot.TeleBot(config.TOKEN)
 
 # Обработчик команды /start
 @bot.message_handler(commands=['start'])
